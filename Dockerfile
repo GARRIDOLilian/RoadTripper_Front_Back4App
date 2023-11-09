@@ -9,7 +9,7 @@ ENV REACT_APP_MAPBOX_TOKEN $REACT_APP_MAPBOX_TOKEN
 
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
-ENV REACT_APP_API_URL=http://localhost:9000
+ENV REACT_APP_API_URL=https://roadtripperapi-3iu6t8e4.b4a.run:9000
 COPY package.json ./
 COPY package-lock.json ./
 RUN npm ci --silent
