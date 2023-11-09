@@ -1,0 +1,6 @@
+
+########## Build image from Dockerfile.build #############
+docker build -f Dockerfile.build -t sample:prod .
+
+########## Run image #####################################
+docker run -it --rm -p 1337:80 sample:prod

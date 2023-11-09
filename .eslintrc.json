@@ -1,0 +1,57 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    // "prettier/prettier": "warn",
+    "no-return-await": "warn",
+    "no-redeclare": "error",
+    "no-useless-return": "warn",
+    "require-await": "error",
+    "valid-jsdoc": "warn",
+    "require-jsdoc": "warn",
+    "semi-style": "error",
+    "no-await-in-loop": "off",
+    "no-console": "warn",
+    "import/no-named-as-default-member": "off",
+    "no-nested-ternary": "warn",
+    "multiline-ternary": "off",
+    "react/jsx-props-no-spreading": "off",
+    "vars-on-top": "off",
+    "camelcase": "off",
+    "spaced-comment": "error",
+    "space-before-function-paren": "off",
+    "func-style": "off",
+    "curly": "off",
+    "sort-imports": "off",
+    "semi-spacing": "error",
+    "no-use-before-define": "warn",
+    "prefer-promise-reject-errors": "error",
+    "comma-dangle": "off",
+    "prefer-destructuring": "off",
+    "no-tabs": "error",
+    "no-unexpected-multiline": "off",
+    "object-curly-newline": "off",
+    "import/no-named-as-default": "off",
+    "no-underscore-dangle": "off",
+    "react/prop-types": "off",
+    "react/jsx-wrap-multilines": [
+      "off",
+      {
+        "declaration": false,
+        "assignment": false
+      }
+    ],
+    "react/jsx-curly-newline": "off"
+  }
+}

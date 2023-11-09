@@ -1,0 +1,83 @@
+{
+  "name": "epic_road_trip",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "14.17.0",
+    "npm": "6.14.13"
+  },
+  "dependencies": {
+    "@date-io/date-fns": "^2.13.1",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@googlemaps/js-api-loader": "^1.14.1",
+    "@mapbox/mapbox-gl-directions": "^4.1.0",
+    "@mapbox/search-js-react": "^1.0.0-beta.9",
+    "@mui/icons-material": "^5.6.2",
+    "@mui/material": "^5.6.2",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^13.5.0",
+    "@trendyol-js/react-carousel": "^2.0.1",
+    "autosuggest-highlight": "^3.2.1",
+    "axios": "^0.26.1",
+    "flat-carousel": "^0.0.1",
+    "font-awesome": "^4.7.0",
+    "html-react-parser": "^2.0.0",
+    "jwt-decode": "^3.1.2",
+    "mapbox-gl": "^2.9.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-map-gl": "^7.0.16",
+    "react-mapbox-autocomplete": "^0.2.3",
+    "react-material-ui-carousel": "^3.3.3",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "set REACT_APP_API_URL=http://localhost:9000 | set REACT_APP_MAPBOX_TOKEN=pk.eyJ1IjoibGlsaWFuMzEiLCJhIjoiY2t4aGM0czkwMGp4bDJ3a2o2ZmFzNm92ZiJ9.QrTxyWPSHeuFzEYxR-hvsg | react-scripts start",
+    "build": "REACT_APP_API_URL=http://localhost:9000 | REACT_APP_MAPBOX_TOKEN=pk.eyJ1IjoibGlsaWFuMzEiLCJhIjoiY2t4aGM0czkwMGp4bDJ3a2o2ZmFzNm92ZiJ9.QrTxyWPSHeuFzEYxR-hvsg | react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      "defaults",
+      "not ie 11"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-react": "^7.16.7",
+    "babel-jest": "^28.0.3",
+    "eslint": "^8.14.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "jest": "^28.0.3",
+    "json-loader": "^0.5.7",
+    "prettier": "2.6.2",
+    "react-test-renderer": "^18.1.0",
+    "transform-loader": "^0.2.4",
+    "webworkify-webpack": "^1.0.6"
+  }
+}

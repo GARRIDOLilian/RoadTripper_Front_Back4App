@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+}
+
+.popup {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.formAddWaypoint {
+  margin: auto;
+  width: 20vw;
+  min-width: 300px;
+  display: none;
+  background-color: white;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  border: solid 2px rgb(120, 120, 120, 0.5);
+  border-radius: 5px;
+  padding: 20px;
+  color: rgb(120, 120, 120, 0.9);
+}
+
+.searchStyle {
+  background-color: rgba(211, 211, 211, 0.562);
+  padding: 16px 12px;
+  border-radius: 4px;
+  margin: 0;
+  border: none;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  transition-duration: 700ms;
+}
+
+.mapWrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.mapActivitiesContainer,
+.mapWaypointsContainer {
+  background-color: white;
+  position: absolute;
+  border: solid 2px rgb(120, 120, 120, 0.5);
+  border-radius: 5px;
+  z-index: 10;
+  padding: 10px;
+  padding-top: 5px;
+  color: rgb(120, 120, 120, 0.9);
+}
+
+.mapWaypointsContainer {
+  left: 10px;
+  top: 10px;
+  width: 22vw;
+}
+
+.mapActivitiesContainer {
+  right: 10px;
+  top: 10px;
+  overflow-y: auto;
+  max-height: 85vh;
+  width: 22vw;
+}
+
+.popup_style_markers {
+  margin-top: -25px;
+  text-align: center;
+}
+
+.mapboxgl-ctrl-directions {
+  max-height: 44vh !important;
+  overflow: hidden;
+  width: 23.5vw !important;
+  max-width: 23.5vw !important;
+  min-width: 10vw !important;
+}
+
+.menuActionWaypoint {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #3bb2d0;
+}
+
+.titleBox {
+  text-align: center;
+  border-bottom: solid 1px lightgrey;
+  margin: 0;
+  padding: 15px 0;
+}
+
+.checkboxContainer {
+  border-bottom: solid 1px lightgrey;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.selectCityContainer {
+  border-bottom: solid 1px lightgrey;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.listBoxContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+.listWaypointsContainer {
+  display: flex;
+  flex-direction: column;
+  max-height: 35vh;
+  overflow-y: scroll;
+  border-top: solid 1px lightgrey;
+}
+
+.waypointsContainer {
+  padding: 15px 0;
+  max-width: 22vw;
+  display: flex;
+  font-size: 17px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconsMenuWaypoint {
+  color: #8a8acb;
+}
+
+.iconsColorBlue {
+  color: #3bb2d0;
+}
+
+.textWaypoints {
+  font-weight: bold;
+  width: 100%;
+  font-size: 17px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0 15px;
+}
+
+.backHomeButton,
+.saveTripButton {
+  text-decoration: none;
+  position: absolute;
+  bottom: 25px;
+  z-index: 10;
+}
+
+.backHomeButton {
+  right: 10px;
+}
+
+.saveTripButton {
+  right: 160px;
+}
+
+.markers_style {
+  background-color: red;
+}
+
+.btn-activities-mobile {
+  display: none !important;
+}
+
+.act-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: solid 1px lightgrey;
+  align-items: center;
+}
+
+.act-title>h2 {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 15px 0;
+}
+
+.act-modal-close {
+  display: none !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .mapActivitiesContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    min-width: 250px;
+  }
+
+  .mapWaypointsContainer {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .waypointsContainer {
+    max-width: none;
+  }
+
+  .btn-activities-mobile {
+    display: block !important;
+  }
+
+  .act-modal-close {
+    display: block !important;
+  }
+
+  .mapboxgl-ctrl-directions {
+    width: 100% !important;
+    max-width: 41vw !important;
+  }
+}
