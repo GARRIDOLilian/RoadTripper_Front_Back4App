@@ -40,8 +40,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "set REACT_APP_API_URL=https://roadtripperapi-3iu6t8e4.b4a.run:9000 | set REACT_APP_MAPBOX_TOKEN=pk.eyJ1IjoibGlsaWFuMzEiLCJhIjoiY2t4aGM0czkwMGp4bDJ3a2o2ZmFzNm92ZiJ9.QrTxyWPSHeuFzEYxR-hvsg | react-scripts start",
-    "build": "REACT_APP_API_URL=https://roadtripperapi-3iu6t8e4.b4a.run:9000 | REACT_APP_MAPBOX_TOKEN=pk.eyJ1IjoibGlsaWFuMzEiLCJhIjoiY2t4aGM0czkwMGp4bDJ3a2o2ZmFzNm92ZiJ9.QrTxyWPSHeuFzEYxR-hvsg | react-scripts build",
+    "start": "set REACT_APP_API_URL=https://roadtripperapi-3iu6t8e4.b4a.run | set REACT_APP_MAPBOX_TOKEN=pk.eyJ1IjoibGlsaWFuMzEiLCJhIjoiY2t4aGM0czkwMGp4bDJ3a2o2ZmFzNm92ZiJ9.QrTxyWPSHeuFzEYxR-hvsg | react-scripts start",
+    "build": "REACT_APP_API_URL=https://roadtripperapi-3iu6t8e4.b4a.run | REACT_APP_MAPBOX_TOKEN=pk.eyJ1IjoibGlsaWFuMzEiLCJhIjoiY2t4aGM0czkwMGp4bDJ3a2o2ZmFzNm92ZiJ9.QrTxyWPSHeuFzEYxR-hvsg | react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
